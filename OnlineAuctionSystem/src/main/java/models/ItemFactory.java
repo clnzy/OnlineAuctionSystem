@@ -4,7 +4,6 @@ public class ItemFactory {
     public static Item createItem(String type, String name, String desc, double price) {
         if (type == null) return new Item(name, desc, price);
 
-        // Chuyển đổi loại sản phẩm tương ứng
         switch (type.toLowerCase()) {
             case "electronics":
                 return new Electronics(name, desc, price);
