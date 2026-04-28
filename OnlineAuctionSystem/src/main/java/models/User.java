@@ -1,6 +1,5 @@
 package models;
 
-// Lớp cha trừu tượng (Mục 3.3.1)
 public abstract class User {
     protected String username;
     protected String role;
