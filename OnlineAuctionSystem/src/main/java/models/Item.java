@@ -5,7 +5,7 @@ public class Item {
     protected String description;
     protected double startingPrice;
 
-    public Item() {} // Cần cho Gson
+    public Item() {}
 
     public Item(String name, String description, double startingPrice) {
         this.name = name;
@@ -18,7 +18,6 @@ public class Item {
     public double getStartingPrice() { return startingPrice; }
 }
 
-// CÁC LỚP CON (Định nghĩa dưới lớp Item để ItemFactory tìm thấy)
 class Electronics extends Item {
     public Electronics(String n, String d, double p) { super(n, d, p); }
 }
